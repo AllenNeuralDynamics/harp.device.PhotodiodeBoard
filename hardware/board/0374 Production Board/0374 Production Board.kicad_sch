@@ -1,0 +1,103 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "8fe3245e-7a82-4862-8bfd-ddbb03ffdc18")
+	(paper "A4")
+	(title_block
+		(rev "0.1")
+		(company "The Allen Institute")
+	)
+	(lib_symbols)
+	(sheet
+		(at 123.19 80.01)
+		(size 26.035 28.575)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "98e69385-28d4-4a85-ac1b-afd32669cc40")
+		(property "Sheetname" "PD with OP AMP + DO connection"
+			(at 123.19 79.2984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "0374_Photodiode.kicad_sch"
+			(at 123.19 109.1696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "0374 Production Board"
+				(path "/8fe3245e-7a82-4862-8bfd-ddbb03ffdc18"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 168.91 80.01)
+		(size 26.035 28.575)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ba147b73-594a-4106-8069-105093132ec6")
+		(property "Sheetname" "Harp Core RP2040 + USB"
+			(at 168.91 79.2984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rp2040_with_usb.kicad_sch"
+			(at 168.91 109.1696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "0374 Production Board"
+				(path "/8fe3245e-7a82-4862-8bfd-ddbb03ffdc18"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,4 +1,12 @@
-There are two sets of instructions, one for [Windows](#windows-setup) and one for [Linux](linux-setup).
+There are two sets of instructions, one for [Windows](#windows-setup) and one for [Linux](#linux-setup).
+
+> [!IMPORTANT]
+> Requirements:
+> * pico-sdk **2.x**. Verified with 2.2.0, which the VS Code Pico extension installs to `~/.pico-sdk/sdk/2.2.0`.
+> * arm-none-eabi-gcc **11 or newer**, because harp core.pico needs C++23. Verified with 14.2.
+> * The `harp.core.rp2040` submodule, pinned to [harp-tech/core.pico](https://github.com/harp-tech/core.pico) commit `4654245`. Run `git submodule update --init` after cloning.
+>
+> The build also hashes `../device.yml` into the firmware (the `interface_hash` in the core R_VERSION register). Rebuild after any change to `device.yml`.
 
 
 # Windows Setup
@@ -33,7 +41,7 @@ sudo apt install cmake python3 build-essential gcc-arm-none-eabi libnewlib-arm-n
 ```
 
 ### Install Submodules
-This project uses the Harp [core.pico](https://github.com/harp-tech/core.pico) library as a submodule.
+This project uses the Harp [core.pico](https://github.com/harp-tech/core.pico) library as a submodule, pinned to a specific commit. Upstream changes its API without notice, so upgrade the pin on purpose.
 Install it with:
 ````
 git submodule update --init
@@ -44,7 +52,7 @@ This project uses the [Pico SDK](https://github.com/raspberrypi/pico-sdk/tree/ma
 The SDK needs to be downloaded and installed to a known folder on your PC.
 Note that the PICO SDK also contains submodules (including TinyUSB), so you must ensure that they are also fetched with:
 ````
-git clone git clone git@github.com:raspberrypi/pico-sdk.git
+git clone https://github.com/raspberrypi/pico-sdk.git
 git submodule update --init --recursive
 ````
 
@@ -91,6 +99,8 @@ Press-and-hold the Pico's BOOTSEL button and power it up (i.e: plug it into usb)
 At this point you do one of the following:
 * drag-and-drop the created **\*.uf2** file into the mass storage device that appears on your pc.
 * flash with [picotool](https://github.com/raspberrypi/picotool)
+
+To reboot a running device into the bootloader without pressing BOOTSEL, write `UPDATE_FIRMWARE` to the core `ResetDevice` register. The device then appears as a mass storage device and you can copy the **\*.uf2** file onto it.
 
 # References
 * [YouTube: How to Set Up Visual Studio Code to Program the Pi Pico (Windows)](https://www.youtube.com/watch?v=mUF9xjDtFfY&t=55s)

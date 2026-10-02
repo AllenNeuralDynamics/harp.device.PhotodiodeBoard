@@ -1,0 +1,8 @@
+### Footprint positions - created on 2026-09-30T12:38:57-0700 ###
+### Printed by KiCad version 9.0.6
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val       Package                PosX       PosY       Rot  Side
+CR1       BPW21R    TO99_BPW20RF_VIS    -5.9360    49.5046    0.0000  bottom
+CR2       BPW21R    TO99_BPW20RF_VIS    -5.9360    29.4894  180.0000  bottom
+## End

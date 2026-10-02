@@ -1,45 +1,25 @@
-# harp.device.pico-template
+# harp.device.photodiode_board
 
-An RP2040-based Harp hardware/firmware project template.
+**PhotodiodeBoard**: an RP2040-based [Harp](https://harp-tech.org/) device that samples two photodiode channels (ADC0 on GPIO27 and ADC1 on GPIO28, which are RP2040 ADC inputs 1 and 2) and streams timestamped readings to the host at 1 kHz.
 
-## Features
-* predefined *.gitignore* file to remove extraneous KiCAD (hardware) files.
-### Hardware
-* Schematic template for a generic Harp Device including:
-  * ground-isolated Full Speed USB communication
-  * 3.5mm audio jack for Harp-protocol time synchronization
-  * RP2040 MCU and required "jellybean" components including:
-    * 2MB external flash (Winbond MPN: W25Q16JVUXIQ TR).
-  * 2 power supply chain options for power derived from either USB directly or from a DC barrel jack.
-* Basic PCBA Layout with size hints for various existing enclosures
-  * DC Barrel Jack (2.1 x 5.5mm, positive center)
-  * USBC
-  * 3.5mm audio jack for Harp synchronization signal
-  * Ground lug
-### Firmware
-* basic "hello-world" project with corresponding file structure
-* populated CMakeLists.txt for compliation
-* placeholder USB descriptors for Manufacturer and Description fields (in the CMakeLists.txt)
-* compilation [instructions](./firmware/README.md)
-* harp protocol core library included as a submodule [harp.core.pico](https://github.com/AllenNeuralDynamics/harp.core.pico)
+* WhoAmI: `1412`
+* Register definitions: [device.yml](./device.yml) (the authoritative register contract)
+* Firmware build/flash instructions: [firmware/README.md](./firmware/README.md)
+* Harp core library: [harp-tech/core.pico](https://github.com/harp-tech/core.pico), as a submodule pinned to commit `4654245`
 
-# Using this template
-Start by clicking the "Use this Template" button in the upper right corner, or click [here](https://github.com/new?template_name=harp.device.pico-template&template_owner=AllenNeuralDynamics).
-## Repository Setup
-* If the project has a corresponding Allen Institute SIPE project number, prepend the repository description with: `{SIPE Project Number}:`.
-* add the tag `Harp`
-* Long-term: remove these instructions!
+## Registers
+| Address | Name | Type | Access | Description |
+|---|---|---|---|---|
+| 32 | `ADC` | U8[2] | Event | Raw readings for ADC0 and ADC1: the top 8 bits of each 12-bit conversion (0-255). |
 
-## Hardware
-* Remove all unused hardware folder starter projects.
-* 🔧 Design your hardware.
-* In the PCBA silkscreen, add:
-  * SIPE part number with full hardware semantic version appended in the format: `{SIPE Project Number}-E-{hw major}-{hw minor}-{hw patch}`. Version number fields range from 1-999 and include leading zeros.
-  * [QR code](https://www.the-qrcode-generator.com/) linking to the Github repository.
+Events are sent at a fixed 1 kHz while the device is in Active mode (`OperationControl`) and replies are not muted. Start and stop the stream with Active/Standby. `ADC` can also be read on demand, which returns a fresh sample.
 
-## Firmware
-* Update the *Manufacturer* and *Description* USB descriptors in the CMakeLists.txt
-* 📝 Write your firmware.
+## Testing
+With the device connected, run:
+```
+uv run software/test_adc_stream.py <port>
+```
+This checks identity, event rate and timestamp spacing, channel values, and that no events are sent in Standby. It uses the official [harp-tech/python](https://github.com/harp-tech/python) packages (`harp-serial`, `harp-device`).
 
 # Github Release Conventions
 Releases specify any vetted changes to the hardware or firmware.

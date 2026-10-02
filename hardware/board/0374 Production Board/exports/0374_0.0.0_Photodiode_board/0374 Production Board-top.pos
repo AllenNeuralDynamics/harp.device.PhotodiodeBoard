@@ -1,0 +1,65 @@
+### Footprint positions - created on 2026-09-30T12:38:57-0700 ###
+### Printed by KiCad version 9.0.6
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                           Package                                             PosX       PosY       Rot  Side
+C1        100nF                         C_0402_1005Metric                                 7.4752    32.1056   90.0000  top
+C2        100nF                         C_0402_1005Metric                                 2.0000    13.1000   90.0000  top
+C3        10pF                          C_0805_2012Metric_Pad1.18x1.45mm_HandSolder       0.7500    39.3000  -90.0000  top
+C4        10nF                          C_0402_1005Metric                                 0.3000    10.8000    0.0000  top
+C5        10pF                          C_0805_2012Metric_Pad1.18x1.45mm_HandSolder      -8.8500    40.9000  -90.0000  top
+C6        100nF                         C_0402_1005Metric                                 3.0900    12.6600   90.0000  top
+C8        100nF                         C_0402_1005Metric                                -1.5000    26.0500  -90.0000  top
+C9        1uF                           C_0402_1005Metric                                 3.5000    26.0200   90.0000  top
+C10       1uF                           C_0402_1005Metric                                 6.8910     7.1120   90.0000  top
+C11       1uF                           C_0402_1005Metric                                 4.0000    24.0200   90.0000  top
+C12       10uF                          C_0805_2012Metric                                 5.5000    25.5000   90.0000  top
+C13       100nF                         C_0402_1005Metric                                -3.7770    20.5000   90.0000  top
+C14       100nF                         C_0402_1005Metric                                -3.5000    17.0000   90.0000  top
+C15       100nF                         C_0402_1005Metric                                 5.1600    14.3800  180.0000  top
+C16       100nF                         C_0402_1005Metric                                 6.0000    15.8500   90.0000  top
+C17       100nF                         C_0402_1005Metric                                 6.7640    21.4630  180.0000  top
+C18       100nF                         C_0402_1005Metric                                 6.5000    22.5000  180.0000  top
+C19       100nF                         C_0402_1005Metric                                -0.5000    26.0500  -90.0000  top
+C20       100nF                         C_0402_1005Metric                                 0.5000    26.0000  -90.0000  top
+C21       10nF                          C_0402_1005Metric                                -3.7000    14.9000  180.0000  top
+C22       1uF                           C_0402_1005Metric                                -5.3000    11.3000   90.0000  top
+C23       2.2uF                         C_0402_1005Metric                                -5.3000    13.4500   90.0000  top
+C25       100nF                         C_0402_1005Metric                                -0.7500    42.3500    0.0000  top
+C28       100nF                         C_0402_1005Metric                                 5.2400    32.1564   90.0000  top
+C29       100nF                         C_0402_1005Metric                                 3.6000    28.1500  -90.0000  top
+D1        D_TVS                         D_0201_0603Metric                                 7.7800     7.6200  -90.0000  top
+D2        D_TVS                         D_0201_0603Metric                                -1.0470     9.1425  -90.0000  top
+D3        LED                           LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder     5.7990    11.9180   90.0000  top
+D4        LED                           LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder     7.3990    11.9380   90.0000  top
+D5        BAT54J                        D_SOD-323F                                       -3.1970     9.1100    0.0000  top
+J1        Conn_01x04_Pin                Connector_3M_MiniClamp_4_37204-1BE0-004PL        26.2975    21.6330   90.0000  top
+J2        AudioJack3                    CUI_SJ-3524-SMT-BE                               11.7170     3.2100   90.0000  top
+J3        USB_C_Receptacle_USB2.0       USB_C_Receptacle_JAE_DX07S016JA1R1500             0.7950     3.8100    0.0000  top
+J4        ~                             PinHeader_1x03_P2.54mm_Vertical                 -10.1270     9.0170  180.0000  top
+J5        ~                             PinHeader_1x03_P2.54mm_Vertical                  24.1630    11.0490  -90.0000  top
+R1        1K                            R_0402_1005Metric                                -7.0000    23.5000   90.0000  top
+R2        5K1                           R_0402_1005Metric                                 0.7030     9.1100   90.0000  top
+R3        5K1                           R_0402_1005Metric                                 4.1530     9.1100   90.0000  top
+R4        487                           R_0402_1005Metric                                19.4640    41.7830    0.0000  top
+R5        4.7k                          R_0402_1005Metric                                17.3050    33.5280  -90.0000  top
+R6        390k                          R_0805_2012Metric_Pad1.20x1.40mm_HandSolder       2.7500    39.3000  -90.0000  top
+R7        390k                          R_0805_2012Metric_Pad1.20x1.40mm_HandSolder     -10.8500    40.9000   90.0000  top
+R8        10K                           R_0402_1005Metric                                -7.0000    25.5000   90.0000  top
+R9        27                            R_0402_1005Metric                                 1.5000    26.0000   90.0000  top
+R10       27                            R_0402_1005Metric                                 2.5000    26.0000   90.0000  top
+R11       330                           R_0402_1005Metric                                 7.0180    15.7480  -90.0000  top
+R12       330                           R_0402_1005Metric                                 8.0340    15.7480  -90.0000  top
+SW2       ~                             435451019820                                     -6.0000    19.0000   90.0000  top
+TP1       TestPoint                     TestPoint_Loop_D2.50mm_Drill1.0mm                10.8000    38.4500    0.0000  top
+TP2       TestPoint                     TestPoint_Loop_D2.50mm_Drill1.0mm                 9.0000    34.8500    0.0000  top
+TP3       TestPoint                     TestPoint_Loop_D2.50mm_Drill1.0mm                 9.8120    18.9230    0.0000  top
+U1        TPD2EUSB30                    Texas_DRT-3                                       2.8530     8.9100    0.0000  top
+U2        LP2985-3.3                    SOT-23-5                                         -2.9000    12.3000   90.0000  top
+U3        RP2040                        QFN56_7X7_RPI                                     1.3464    18.9000    0.0000  top
+U4        W25Q16JVUXIQ                  USON-8_UX_2x3x0p6_WIN                            -5.0000    24.5000   90.0000  top
+U5        AD8656                        R_8_ADI                                          -4.0500    39.3000    0.0000  top
+U6        REF2033AIDDCR                 DDC0005A_M                                        6.3576    29.5656    0.0000  top
+U7        Optocoupler_DC_PhotoNPN_AKEC  MFSOP6-4_4.4x3.6mm_P1.27mm                       15.9080    38.6080  -90.0000  top
+X1        ECS-TXO-2016                  Crystal_SMD_2016-4Pin_2.0x1.6mm                   0.2000    12.8000   90.0000  top
+## End

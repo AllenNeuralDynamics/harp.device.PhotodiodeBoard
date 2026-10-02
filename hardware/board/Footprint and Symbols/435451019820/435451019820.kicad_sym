@@ -1,0 +1,89 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "435451019820" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "S" (id 0) (at 5.08 1.778 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "435451019820" (id 1) (at 5.08 -1.016 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "435451019820:435451019820" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "435451019820_0_0"
+      (polyline
+        (pts (xy -2.54 5.08) (xy 0.0 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 5.08) (xy 2.54 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -2.54) (xy 2.54 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 5.08) (xy 0.0 3.175)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -0.635) (xy 0.0 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.47 -0.2) (xy 1.04 2.61)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 6.35) (xy 2.54 8.89)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 3.048 6.858) (xy 3.048 8.382)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 3.556 7.112) (xy 3.556 8.128)) (stroke (width 0.1524))
+      )
+      (circle (center 0.0 0.0) (radius 0.508)
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (circle (center 0.0 2.54) (radius 0.508)
+        (stroke (width 0.254)) (fill (type none))
+      )
+      (pin passive line (at 5.08 5.08 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 -2.54 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -5.08 5.08 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -5.08 -2.54 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 0.0 7.62 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "GND"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
